@@ -14,6 +14,9 @@ Version:    1.0.3
 ** 子テーマ用のスタイルを書く
 ************************************/
 /*必要ならばここにコードを書く*/
+// @import 'custom_a'; // Bootstrapの読み込み
+@import 'custom_b'; // Bootstrapの一部のみ読み込み
+
 @import 'variables';
 
 
@@ -21,9 +24,13 @@ Version:    1.0.3
   background-color: transparent;
 }
 
-.mobile-header-menu-buttons{
+.mobile-header-menu-buttons {
   color: $header-text-color;
   background-color: $header-background-color;
+
+  .navi-menu-close-button {
+    color: #333;
+  }
 }
 
 
@@ -35,25 +42,19 @@ Version:    1.0.3
 /*1023px以下*/
 @media screen and (max-width: 1023px){
   /*必要ならばここにコードを書く*/
-  .display-lg-none {
-    display: none;
-  }
+
 }
 
 /*834px以下*/
 @media screen and (max-width: 834px){
   /*必要ならばここにコードを書く*/
-  .display-md-none {
-    display: none;
-  }
+
 }
 
 /*480px以下*/
 @media screen and (max-width: 480px){
   /*必要ならばここにコードを書く*/
-  .display-xs-none {
-    display: none;
-  }
+
 }
 
 
