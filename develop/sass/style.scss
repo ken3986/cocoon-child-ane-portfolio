@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/*!
+Theme Name: Cocoon Child Ane-Portfolio
+Description: Cocoon専用の子テーマ
+Theme URI: https://github.com/ken3986/cocoon-child-ane-portfolio
+Author: Ken
+Author URI:
+Template:   cocoon-master
+Version:    1.0.3
+*/
+
+/************************************
+** 子テーマ用のスタイルを書く
+************************************/
+/*必要ならばここにコードを書く*/
+@import 'variables';
+
+
+.main {
+  background-color: transparent;
+}
+
+.mobile-header-menu-buttons{
+  color: $header-text-color;
+  background-color: $header-background-color;
+}
+
+
+
+
+/************************************
+** レスポンシブデザイン用のメディアクエリ
+************************************/
+/*1023px以下*/
+@media screen and (max-width: 1023px){
+  /*必要ならばここにコードを書く*/
+  .display-lg-none {
+    display: none;
+  }
+}
+
+/*834px以下*/
+@media screen and (max-width: 834px){
+  /*必要ならばここにコードを書く*/
+  .display-md-none {
+    display: none;
+  }
+}
+
+/*480px以下*/
+@media screen and (max-width: 480px){
+  /*必要ならばここにコードを書く*/
+  .display-xs-none {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
