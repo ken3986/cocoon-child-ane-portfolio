@@ -1,0 +1,23 @@
+{
+  "name": "cocoon-child-ane-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "javascript.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/ken3986/cocoon-child-ane-portfolio.git",
+  "keywords": [],
+  "author": "ken3986 <naka_ken8686@yahoo.co.jp>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ken3986/cocoon-child-ane-portfolio/issues"
+  },
+  "homepage": "https://github.com/ken3986/cocoon-child-ane-portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.1"
+  }
+}
