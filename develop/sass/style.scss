@@ -7,7 +7,7 @@ Theme URI: https://github.com/ken3986/cocoon-child-ane-portfolio
 Author: Ken
 Author URI:
 Template:   cocoon-master
-Version:    1.0.4
+Version:    1.0.5
 */
 
 /************************************
@@ -29,12 +29,12 @@ Version:    1.0.4
 /*------------------------------*/
 /* メニュー */
 /*------------------------------*/
-#navi .navi-in {
+#navi {
   $border-color: #fff;
 
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
-  > ul > li {
+  .navi-in > ul > li {
     border-left: 1px solid $border-color;
     &:last-child {
       border-right: 1px solid $border-color;

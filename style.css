@@ -6,7 +6,7 @@ Theme URI: https://github.com/ken3986/cocoon-child-ane-portfolio
 Author: Ken
 Author URI:
 Template:   cocoon-master
-Version:    1.0.3
+Version:    1.0.4
 */
 /************************************
 ** 子テーマ用のスタイルを書く
@@ -4457,7 +4457,7 @@ Version:    1.0.3
 /*------------------------------*/
 /* メニュー */
 /*------------------------------*/
-#navi .navi-in {
+#navi {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
@@ -4470,11 +4470,11 @@ Version:    1.0.3
   border-right: 1px solid #fff;
 }
 
-#navi .navi-in > ul > .menu-item-has-children > a::after {
+#navi > ul > .menu-item-has-children > a::after {
   right: 10px;
 }
 
-#navi .navi-in .fas {
+#navi .fas {
   margin-right: 0.5em;
 }
 
