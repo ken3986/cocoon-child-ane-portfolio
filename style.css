@@ -12,6 +12,9 @@ Version:    1.0.3
 ** 子テーマ用のスタイルを書く
 ************************************/
 /*必要ならばここにコードを書く*/
+/*------------------------------*/
+/* Bootstrapの変数上書きファイル */
+/*------------------------------*/
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -1491,7 +1494,7 @@ Version:    1.0.3
   visibility: hidden !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 481px) {
   .float-sm-start {
     float: left !important;
   }
@@ -2068,7 +2071,7 @@ Version:    1.0.3
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 835px) {
   .float-md-start {
     float: left !important;
   }
@@ -2645,7 +2648,7 @@ Version:    1.0.3
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .float-lg-start {
     float: left !important;
   }
@@ -4441,10 +4444,43 @@ Version:    1.0.3
 /*------------------------------*/
 /* メディアクエリ */
 /*------------------------------*/
+/*------------------------------*/
+/* MixIn */
+/*------------------------------*/
+/*------------------------------*/
+/* メインカラム */
+/*------------------------------*/
 .main {
   background-color: transparent;
 }
 
+/*------------------------------*/
+/* メニュー */
+/*------------------------------*/
+#navi .navi-in {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+#navi .navi-in > ul > li {
+  border-left: 1px solid #fff;
+}
+
+#navi .navi-in > ul > li:last-child {
+  border-right: 1px solid #fff;
+}
+
+#navi .navi-in > ul > .menu-item-has-children > a::after {
+  right: 10px;
+}
+
+#navi .navi-in .fas {
+  margin-right: 0.5em;
+}
+
+/*------------------------------*/
+/* モバイルメニュー */
+/*------------------------------*/
 .mobile-header-menu-buttons {
   color: #fff;
   background-color: #009BD1;
@@ -4454,17 +4490,71 @@ Version:    1.0.3
   color: #333;
 }
 
+/*------------------------------*/
+/* トップヘッダー */
+/*------------------------------*/
+.tt-top-header {
+  padding: 20px 29px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 834px) {
+  .tt-top-header {
+    padding: 16px;
+  }
+}
+
+.tt-top-header .column-wrap:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  .tt-top-header .column-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tt-top-header .column-wrap > div {
+    width: 100%;
+  }
+  .tt-top-header .column-wrap > div:not(:last-child) {
+    margin-bottom: 1.4em !important;
+  }
+}
+
+/*------------------------------*/
+/* SmartSlider */
+/*------------------------------*/
+.smart-slider-text-award {
+  /*480px以下*/
+}
+
+@media screen and (max-width: 480px) {
+  .smart-slider-text-award {
+    /*必要ならばここにコードを書く*/
+    font-size: 80% !important;
+  }
+}
+
 /************************************
 ** レスポンシブデザイン用のメディアクエリ
 ************************************/
 /*1023px以下*/
 @media screen and (max-width: 1023px) {
   /*必要ならばここにコードを書く*/
+  .mblt-header-mobile-buttons {
+    margin-top: 0;
+  }
 }
 
 /*834px以下*/
 @media screen and (max-width: 834px) {
   /*必要ならばここにコードを書く*/
+  .mblt-header-mobile-buttons {
+    margin-top: 46px;
+  }
 }
 
 /*480px以下*/

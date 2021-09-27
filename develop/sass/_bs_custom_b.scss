@@ -4,6 +4,7 @@
 @import "../../node_modules/bootstrap/scss/functions";
 
 // 2. デフォルトの変数の再定義を組み込む
+@import "./bs_custom_variables";
 
 // 3. 残りの必須のBootstrapスタイルシートを組み込む
 @import "../../node_modules/bootstrap/scss/variables";

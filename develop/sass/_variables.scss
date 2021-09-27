@@ -19,7 +19,6 @@ $shadow: #aaa;
 $header-text-color: #fff;
 $header-background-color: #009BD1;
 
-
 /*------------------------------*/
 /* メディアクエリ */
 /*------------------------------*/
@@ -27,3 +26,17 @@ $header-background-color: #009BD1;
 $breakpoint_lg: 1023px;
 $breakpoint_md: 834px;
 $breakpoint_sm: 480px;
+
+
+/*------------------------------*/
+/* MixIn */
+/*------------------------------*/
+@mixin main {
+  padding: 20px 29px;
+
+  @media screen and (max-width: $breakpoint_md) {
+    padding: 16px;
+  }
+
+  @content;
+}

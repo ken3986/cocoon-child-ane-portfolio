@@ -7,29 +7,93 @@ Theme URI: https://github.com/ken3986/cocoon-child-ane-portfolio
 Author: Ken
 Author URI:
 Template:   cocoon-master
-Version:    1.0.3
+Version:    1.0.4
 */
 
 /************************************
 ** 子テーマ用のスタイルを書く
 ************************************/
 /*必要ならばここにコードを書く*/
-// @import 'custom_a'; // Bootstrapの読み込み
-@import 'custom_b'; // Bootstrapの一部のみ読み込み
+// @import 'bs_custom_a'; // Bootstrapの読み込み
+@import 'bs_custom_b'; // Bootstrapの一部のみ読み込み
 
 @import 'variables';
 
-
+/*------------------------------*/
+/* メインカラム */
+/*------------------------------*/
 .main {
   background-color: transparent;
 }
 
+/*------------------------------*/
+/* メニュー */
+/*------------------------------*/
+#navi .navi-in {
+  $border-color: #fff;
+
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  > ul > li {
+    border-left: 1px solid $border-color;
+    &:last-child {
+      border-right: 1px solid $border-color;
+
+    }
+  }
+  > ul > .menu-item-has-children > a::after {
+    right: 10px;
+  }
+
+  .fas {
+    margin-right: 0.5em;
+  }
+}
+
+/*------------------------------*/
+/* モバイルメニュー */
+/*------------------------------*/
 .mobile-header-menu-buttons {
   color: $header-text-color;
   background-color: $header-background-color;
 
   .navi-menu-close-button {
     color: #333;
+  }
+}
+
+/*------------------------------*/
+/* トップヘッダー */
+/*------------------------------*/
+.tt-top-header {
+  @include main;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .column-wrap {
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: $breakpoint_sm) and (max-width: $breakpoint_lg) {
+      flex-direction: column;
+      &>div{
+        width: 100%;
+        &:not(:last-child) {
+          margin-bottom: 1.4em !important;
+        }
+      }
+    }
+  }
+}
+
+/*------------------------------*/
+/* SmartSlider */
+/*------------------------------*/
+.smart-slider-text-award {
+  /*480px以下*/
+  @media screen and (max-width: 480px){
+    /*必要ならばここにコードを書く*/
+    font-size: 80% !important;
   }
 }
 
@@ -42,13 +106,17 @@ Version:    1.0.3
 /*1023px以下*/
 @media screen and (max-width: 1023px){
   /*必要ならばここにコードを書く*/
-
+  .mblt-header-mobile-buttons {
+    margin-top: 0;
+  }
 }
 
 /*834px以下*/
 @media screen and (max-width: 834px){
   /*必要ならばここにコードを書く*/
-
+  .mblt-header-mobile-buttons {
+    margin-top: 46px;
+  }
 }
 
 /*480px以下*/
